@@ -50,13 +50,13 @@ fi
 
 # check if lzip is installed
 if [ ! "$(which lzip)" ]; then
-	echo -e "lzip is not installed. Please install lzip.\nExample: sudo apt install lzip"
+	echo -e "lzip is not installed. Please install lzip.\nExample: sudo pacman -S lzip"
 	exit 1
 fi
 
 # check if squashfs-tools are installed
 if [ ! "$(which mksquashfs)" ] || [ ! "$(which unsquashfs)" ]; then
-	echo -e "squashfs-tools is not installed. Please install squashfs-tools.\nExample: sudo apt install squashfs-tools"
+	echo -e "squashfs-tools is not installed. Please install squashfs-tools.\nExample: sudo pacman -S squashfs-tools"
 	exit 1
 else
 	MKSQUASHFS=$(which mksquashfs)
@@ -65,7 +65,7 @@ fi
 
 # check if wget is installed
 if [ ! "$(which wget)" ]; then
-	echo -e "wget is not installed. Please install wget.\nExample: sudo apt install wget"
+	echo -e "wget is not installed. Please install wget.\nExample: sudo pacman -S wget"
 	exit 1
 else
 	WGET=$(which wget)
@@ -73,7 +73,7 @@ fi
 
 # check if curl is installed
 if [ ! "$(which curl)" ]; then
-	echo -e "curl is not installed. Please install curl.\nExample: sudo apt install curl"
+	echo -e "curl is not installed. Please install curl.\nExample: sudo pacman -S curl"
 	exit 1
 else
 	CURL=$(which curl)
@@ -81,7 +81,7 @@ fi
 
 # check if unzip is installed
 if [ ! "$(which unzip)" ]; then
-	echo -e "unzip is not installed. Please install unzip.\nExample: sudo apt install unzip"
+	echo -e "unzip is not installed. Please install unzip.\nExample: sudo pacman -S unzip"
 	exit 1
 else
 	UNZIP=$(which unzip)
@@ -89,7 +89,7 @@ fi
 
 # check if tar is installed
 if [ ! "$(which tar)" ]; then
-	echo -e "tar is not installed. Please install tar.\nExample: sudo apt install tar"
+	echo -e "tar is not installed. Please install tar.\nExample: sudo pacman -S tar"
 	exit 1
 else
 	TAR=$(which tar)
